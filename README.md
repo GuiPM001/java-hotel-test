@@ -1,14 +1,13 @@
-# Nearly empty java project with a failing test!
+# Teste Técnico - Syngenta Digital
 
+Uma rede de hotéis em Miami gostaria de oferecer um serviço de reservas pela internet. A
+rede é composta por três hotéis: Lakewood, Bridgewood e Ridgewood. Cada hotel tem
+taxas diferenciadas para dia de semana ou final de semana, incluindo taxas específicas
+para participantes do programa de fidelidade. Adicionalmente, cada hotel tem uma
+classificação, indicando a excelência do serviço.
 
-This has been created using gradle; to run the tests, just execute:
+## Exemplo de Entrada:
+Regular: 16Mar2009(mon), 17Mar2009(tues), 18Mar2009(wed)
 
-```
-./gradlew test
-```
-
-or (on windows machines):
-
-```
-gradlew.bat test
-```
+## Saída
+Hotel mais barato: &lt;nome_do_hotel_mais_barato&gt;
