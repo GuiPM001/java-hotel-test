@@ -32,10 +32,10 @@ public class HotelTeste {
         // Atribuindo valores do hotel Ridgewood
         Hotel ridgewood = new Hotel();
         ridgewood.setTaxaDiaSemana(220);
-        ridgewood.setTaxaFinalSemana(100);
-        ridgewood.setTaxaDiaSemanaReward(150);
+        ridgewood.setTaxaFinalSemana(150);
+        ridgewood.setTaxaDiaSemanaReward(100);
         ridgewood.setTaxaFinalSemanaReward(40);    
-        bridgewood.setClassificação(5);
+        ridgewood.setClassificação(5);
         int totalRidgewood = 0;
         
         Scanner input = new Scanner(System.in);
@@ -101,22 +101,22 @@ public class HotelTeste {
         
         // Desempate entre os hotéis
         else if (totalLakewood == totalBridgewood) {
-            if (lakewood.getClassificação() < bridgewood.getClassificação()) 
-                System.out.println("Hotel mais barato: Bridgewood");
-            else
+            if (lakewood.getClassificação() > bridgewood.getClassificação()) 
                 System.out.println("Hotel mais barato: Lakewood");
+            else
+                System.out.println("Hotel mais barato: Bridgewood");
             
         } else if (totalLakewood == totalRidgewood) {
-            if (lakewood.getClassificação() < ridgewood.getClassificação()) 
+            if (ridgewood.getClassificação() > lakewood.getClassificação()) 
                 System.out.println("Hotel mais barato: Ridgewood");
             else
                 System.out.println("Hotel mais barato: Lakewood");
             
         } else if (totalBridgewood == totalRidgewood) {
-            if (bridgewood.getClassificação() < ridgewood.getClassificação()) 
-                System.out.println("Hotel mais barato: Ridgewood");
-            else
+            if (bridgewood.getClassificação() > ridgewood.getClassificação()) 
                 System.out.println("Hotel mais barato: Bridgewood");
+            else
+                System.out.println("Hotel mais barato: Ridgewood");
         }
     }
 }
