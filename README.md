@@ -1,4 +1,4 @@
-# Teste Técnico - Syngenta Digital
+# Java - Teste hotel mais barato
 
 Uma rede de hotéis em Miami gostaria de oferecer um serviço de reservas pela internet. A
 rede é composta por três hotéis: Lakewood, Bridgewood e Ridgewood. Cada hotel tem
